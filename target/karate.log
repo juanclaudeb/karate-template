@@ -1,68 +1,40 @@
-10:57:46.596 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-10:57:48.087 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-10:57:48.087 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-10:57:48.087 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-10:57:48.527 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+14:29:41.426 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+14:29:42.018 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+14:29:44.234 [GatlingSystem-akka.actor.default-dispatcher-12] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+14:29:44.234 [GatlingSystem-akka.actor.default-dispatcher-13] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+14:29:44.249 [GatlingSystem-akka.actor.default-dispatcher-12] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+14:29:44.254 [GatlingSystem-akka.actor.default-dispatcher-13] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+14:29:44.273 [GatlingSystem-akka.actor.default-dispatcher-16] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@23051934 has finished injecting
+14:29:44.274 [GatlingSystem-akka.actor.default-dispatcher-16] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+14:29:45.016 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:29:46.473 [GatlingSystem-akka.actor.default-dispatcher-17] INFO  com.intuit.karate - karate.env system property was: null 
+14:29:46.641 [GatlingSystem-akka.actor.default-dispatcher-17] DEBUG com.intuit.karate - request:
 1 > GET https://conduit-api.bondaracademy.com/api/tags
 1 > Host: conduit-api.bondaracademy.com
 1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
 1 > Accept-Encoding: gzip,deflate
 
 
-10:57:48.527 [pool-2-thread-2] DEBUG com.intuit.karate - request:
-1 > GET https://conduit-api.bondaracademy.com/api/tags
-1 > Host: conduit-api.bondaracademy.com
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
-1 > Accept-Encoding: gzip,deflate
-
-
-10:57:48.527 [pool-2-thread-1] DEBUG com.intuit.karate - request:
-1 > GET https://conduit-api.bondaracademy.com/api/tags
-1 > Host: conduit-api.bondaracademy.com
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
-1 > Accept-Encoding: gzip,deflate
-
-
-10:57:49.406 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 870
+14:29:47.289 [GatlingSystem-akka.actor.default-dispatcher-17] DEBUG com.intuit.karate - response time in milliseconds: 644
 1 < 200
 1 < x-powered-by: Express
 1 < access-control-allow-origin: https://conduit.bondaracademy.com
 1 < vary: Origin
 1 < content-type: application/json; charset=utf-8
 1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
-1 < X-Cloud-Trace-Context: 009549767f245d2d9494f45b293cf372;o=1
-1 < Date: Fri, 09 Aug 2024 08:57:48 GMT
+1 < X-Cloud-Trace-Context: 5fc57d218b2a6a8413de51cb4bd5eeea;o=1
+1 < Date: Mon, 19 Aug 2024 12:29:47 GMT
 1 < Server: Google Frontend
 1 < Content-Length: 119
 {"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
 
-10:57:49.414 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 881
-1 < 200
-1 < x-powered-by: Express
-1 < access-control-allow-origin: https://conduit.bondaracademy.com
-1 < vary: Origin
-1 < content-type: application/json; charset=utf-8
-1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
-1 < X-Cloud-Trace-Context: 4922e5b1307b5629dadf715cb0b52ae2
-1 < Date: Fri, 09 Aug 2024 08:57:48 GMT
-1 < Server: Google Frontend
-1 < Content-Length: 119
-{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
-
-10:57:49.639 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1106
-1 < 200
-1 < x-powered-by: Express
-1 < access-control-allow-origin: https://conduit.bondaracademy.com
-1 < vary: Origin
-1 < content-type: application/json; charset=utf-8
-1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
-1 < X-Cloud-Trace-Context: 24c32f6bccd67579dd38501137a3217a
-1 < Date: Fri, 09 Aug 2024 08:57:48 GMT
-1 < Server: Google Frontend
-1 < Content-Length: 119
-{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
-
-10:57:50.606 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/conduittagstests/tags.feature
+14:29:47.327 [GatlingSystem-akka.actor.default-dispatcher-22] INFO  i.g.core.controller.inject.Injector - All users of scenario get list of tags are stopped
+14:29:47.328 [GatlingSystem-akka.actor.default-dispatcher-22] INFO  i.g.core.controller.inject.Injector - Stopping
+14:29:47.330 [GatlingSystem-akka.actor.default-dispatcher-25] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+14:29:47.380 [GatlingSystem-akka.actor.default-dispatcher-31] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+14:29:47.433 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(D:\Projects\karategithub\karate-template\target\gatling\perftest-20240819122944179\simulation.log) from perftest-20240819122944179
+14:29:47.465 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+14:29:47.474 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 4 lines
+14:29:47.487 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+14:29:47.512 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 4 lines

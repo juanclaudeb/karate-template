@@ -2,13 +2,13 @@ name: maven-build
 
 on:
   push:
-    branches: [ main, master, develop ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, master, develop ]
+    branches: [ main ]
 
 jobs:
-  build:
-    timeout-minutes: 20
+  test:
+    timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
     - name: git checkout
@@ -24,7 +24,7 @@ jobs:
         path: ~/.m2/repository
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-maven-
-    - name: build with maven
+    - name: build and test with maven
       run: mvn -B clean install -P pre-release -Djavacpp.platform=linux-x86_64
     - name: upload report
       uses: actions/upload-artifact@v4
