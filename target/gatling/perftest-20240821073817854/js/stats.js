@@ -6,67 +6,67 @@ pathFormatted: "group_missing-name-b06d1",
 stats: {
     "name": "All Requests",
     "numberOfRequests": {
-        "total": "1",
-        "ok": "1",
+        "total": "156",
+        "ok": "156",
         "ko": "0"
     },
     "minResponseTime": {
-        "total": "644",
-        "ok": "644",
+        "total": "548",
+        "ok": "548",
         "ko": "-"
     },
     "maxResponseTime": {
-        "total": "644",
-        "ok": "644",
+        "total": "1267",
+        "ok": "1267",
         "ko": "-"
     },
     "meanResponseTime": {
-        "total": "644",
-        "ok": "644",
+        "total": "586",
+        "ok": "586",
         "ko": "-"
     },
     "standardDeviation": {
-        "total": "0",
-        "ok": "0",
+        "total": "75",
+        "ok": "75",
         "ko": "-"
     },
     "percentiles1": {
-        "total": "644",
-        "ok": "644",
+        "total": "570",
+        "ok": "570",
         "ko": "-"
     },
     "percentiles2": {
-        "total": "644",
-        "ok": "644",
+        "total": "587",
+        "ok": "587",
         "ko": "-"
     },
     "percentiles3": {
-        "total": "644",
-        "ok": "644",
+        "total": "633",
+        "ok": "633",
         "ko": "-"
     },
     "percentiles4": {
-        "total": "644",
-        "ok": "644",
+        "total": "927",
+        "ok": "927",
         "ko": "-"
     },
     "group1": {
     "name": "t < 800 ms",
     "htmlName": "t < 800 ms",
-    "count": 1,
-    "percentage": 100
+    "count": 154,
+    "percentage": 99
 },
     "group2": {
     "name": "800 ms <= t < 1200 ms",
     "htmlName": "t >= 800 ms <br> t < 1200 ms",
-    "count": 0,
-    "percentage": 0
+    "count": 1,
+    "percentage": 1
 },
     "group3": {
     "name": "t >= 1200 ms",
     "htmlName": "t >= 1200 ms",
-    "count": 0,
-    "percentage": 0
+    "count": 1,
+    "percentage": 1
 },
     "group4": {
     "name": "failed",
@@ -75,8 +75,8 @@ stats: {
     "percentage": 0
 },
     "meanNumberOfRequestsPerSecond": {
-        "total": "0.333",
-        "ok": "0.333",
+        "total": "2.943",
+        "ok": "2.943",
         "ko": "-"
     }
 },
@@ -89,67 +89,67 @@ pathFormatted: "req_get--api-tags-5e3fe",
 stats: {
     "name": "GET /api/tags",
     "numberOfRequests": {
-        "total": "1",
-        "ok": "1",
+        "total": "156",
+        "ok": "156",
         "ko": "0"
     },
     "minResponseTime": {
-        "total": "644",
-        "ok": "644",
+        "total": "548",
+        "ok": "548",
         "ko": "-"
     },
     "maxResponseTime": {
-        "total": "644",
-        "ok": "644",
+        "total": "1267",
+        "ok": "1267",
         "ko": "-"
     },
     "meanResponseTime": {
-        "total": "644",
-        "ok": "644",
+        "total": "586",
+        "ok": "586",
         "ko": "-"
     },
     "standardDeviation": {
-        "total": "0",
-        "ok": "0",
+        "total": "75",
+        "ok": "75",
         "ko": "-"
     },
     "percentiles1": {
-        "total": "644",
-        "ok": "644",
+        "total": "570",
+        "ok": "570",
         "ko": "-"
     },
     "percentiles2": {
-        "total": "644",
-        "ok": "644",
+        "total": "587",
+        "ok": "587",
         "ko": "-"
     },
     "percentiles3": {
-        "total": "644",
-        "ok": "644",
+        "total": "633",
+        "ok": "633",
         "ko": "-"
     },
     "percentiles4": {
-        "total": "644",
-        "ok": "644",
+        "total": "927",
+        "ok": "927",
         "ko": "-"
     },
     "group1": {
     "name": "t < 800 ms",
     "htmlName": "t < 800 ms",
-    "count": 1,
-    "percentage": 100
+    "count": 154,
+    "percentage": 99
 },
     "group2": {
     "name": "800 ms <= t < 1200 ms",
     "htmlName": "t >= 800 ms <br> t < 1200 ms",
-    "count": 0,
-    "percentage": 0
+    "count": 1,
+    "percentage": 1
 },
     "group3": {
     "name": "t >= 1200 ms",
     "htmlName": "t >= 1200 ms",
-    "count": 0,
-    "percentage": 0
+    "count": 1,
+    "percentage": 1
 },
     "group4": {
     "name": "failed",
@@ -158,8 +158,8 @@ stats: {
     "percentage": 0
 },
     "meanNumberOfRequestsPerSecond": {
-        "total": "0.333",
-        "ok": "0.333",
+        "total": "2.943",
+        "ok": "2.943",
         "ko": "-"
     }
 }

@@ -1,4 +1,0 @@
-RUN	performance.PerfTest	perftest	1724070584179	 	3.9.5
-USER	get list of tags	START	1724070585122
-REQUEST		GET /api/tags	1724070586642	1724070587286	OK	 
-USER	get list of tags	END	1724070587325
