@@ -120,4 +120,4 @@ Please review the karate documentation for more information: https://github.com/
 We are able to view the test report for a completed test run by navigating to the following files:
 
 - target/gatling
-- target/karate-test-reports
+- target/karate-reports

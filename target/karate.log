@@ -1,0 +1,68 @@
+13:38:45.916 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:38:47.553 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:38:47.553 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+13:38:47.553 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:38:48.019 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:38:48.019 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:38:48.019 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:38:49.471 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1440
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 6b020b42d82040c4d6877efb1540f828;o=1
+1 < Date: Thu, 22 Aug 2024 11:38:48 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:38:49.489 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1463
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 0388c86e11e0ff13e2446dbd7a855e69
+1 < Date: Thu, 22 Aug 2024 11:38:48 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:38:49.497 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1477
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 7435f284c1639cab76a1ef0f9bf2c0d9
+1 < Date: Thu, 22 Aug 2024 11:38:48 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:38:50.582 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/conduittagstests/tags.feature
