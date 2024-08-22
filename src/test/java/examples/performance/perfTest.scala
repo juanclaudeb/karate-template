@@ -8,7 +8,7 @@ class PerfTest extends Simulation {
 
     val protocol = karateProtocol()
 
-    //protocol.nameResolver = (req, ctx) -> req.getHeader("karate-name");
+    protocol.nameResolver = (req, ctx) -> req.getHeader("karate-name");
     //protocol.runner.karateEnv("perf");
 
     val getTagList = scenario("get list of tags").exec(karateFeature("classpath:examples/performance/getTags.feature"))
