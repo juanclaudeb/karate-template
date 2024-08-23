@@ -1,0 +1,10 @@
+{
+  "simulation": "performance.PerfTest",
+  "simulationId": "perftest-20240822114123825",
+  "start": 1724326884848,
+  "description": "",
+  "scenarios": ["get list of tags"],
+  "assertions": [
+
+  ]
+}

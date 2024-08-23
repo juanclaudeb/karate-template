@@ -121,3 +121,38 @@ We are able to view the test report for a completed test run by navigating to th
 
 - target/gatling
 - target/karate-reports
+
+## Project file structure
+
+```
+src/test/java
+    |
+    +-- karate-config.js
+    +-- logback-test.xml
+    +-- some-reusable.feature
+    +-- some-classpath-function.js
+    +-- some-classpath-payload.json
+    |
+    \-- animals
+        |
+        +-- AnimalsTest.java
+        |
+        +-- cats
+        |   |
+        |   +-- cats-post.feature
+        |   +-- cats-get.feature
+        |   +-- cat.json
+        |   \-- CatsRunner.java
+        |   +-- performance
+        |       |
+        |       +-- cats-perf.scala 
+        \-- dogs
+            |
+            +-- dog-crud.feature
+            +-- dog.json
+            +-- some-helper-function.js
+            \-- DogsRunner.java
+            +-- performance
+               |
+               +-- dogs-perf.scala 
+```

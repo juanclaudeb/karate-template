@@ -1,68 +1,3761 @@
-13:38:45.916 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-13:38:47.553 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-13:38:47.553 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-13:38:47.553 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-13:38:48.019 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+13:41:20.934 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+13:41:21.584 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+13:41:23.901 [GatlingSystem-akka.actor.default-dispatcher-12] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+13:41:23.901 [GatlingSystem-akka.actor.default-dispatcher-13] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+13:41:23.915 [GatlingSystem-akka.actor.default-dispatcher-12] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+13:41:23.921 [GatlingSystem-akka.actor.default-dispatcher-13] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+13:41:24.757 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:26.187 [GatlingSystem-akka.actor.default-dispatcher-17] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:26.420 [GatlingSystem-akka.actor.default-dispatcher-17] DEBUG com.intuit.karate - request:
 1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
 1 > Host: conduit-api.bondaracademy.com
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
 1 > Accept-Encoding: gzip,deflate
 
 
-13:38:48.019 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+13:41:27.087 [GatlingSystem-akka.actor.default-dispatcher-17] DEBUG com.intuit.karate - response time in milliseconds: 662
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: e528f84a144fe3893180a2f8e793a031
+1 < Date: Thu, 22 Aug 2024 11:41:26 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:27.959 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:27.989 [GatlingSystem-akka.actor.default-dispatcher-33] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:27.995 [GatlingSystem-akka.actor.default-dispatcher-33] DEBUG com.intuit.karate - request:
 1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
 1 > Host: conduit-api.bondaracademy.com
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
 1 > Accept-Encoding: gzip,deflate
 
 
-13:38:48.019 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+13:41:28.574 [GatlingSystem-akka.actor.default-dispatcher-33] DEBUG com.intuit.karate - response time in milliseconds: 577
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 8343dcbf7efacd4237f039c7caf7a9ea
+1 < Date: Thu, 22 Aug 2024 11:41:27 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:28.963 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:28.991 [GatlingSystem-akka.actor.default-dispatcher-45] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:28.997 [GatlingSystem-akka.actor.default-dispatcher-45] DEBUG com.intuit.karate - request:
 1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
 1 > Host: conduit-api.bondaracademy.com
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
 1 > Accept-Encoding: gzip,deflate
 
 
-13:38:49.471 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1440
+13:41:29.576 [GatlingSystem-akka.actor.default-dispatcher-45] DEBUG com.intuit.karate - response time in milliseconds: 577
 1 < 200
 1 < x-powered-by: Express
 1 < access-control-allow-origin: https://conduit.bondaracademy.com
 1 < vary: Origin
 1 < content-type: application/json; charset=utf-8
 1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
-1 < X-Cloud-Trace-Context: 6b020b42d82040c4d6877efb1540f828;o=1
-1 < Date: Thu, 22 Aug 2024 11:38:48 GMT
+1 < X-Cloud-Trace-Context: 2ca6fad2f495b4dfed1f5c0ea1623820;o=1
+1 < Date: Thu, 22 Aug 2024 11:41:28 GMT
 1 < Server: Google Frontend
 1 < Content-Length: 119
 {"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
 
-13:38:49.489 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1463
+13:41:29.986 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:30.012 [GatlingSystem-akka.actor.default-dispatcher-55] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:30.020 [GatlingSystem-akka.actor.default-dispatcher-55] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:30.591 [GatlingSystem-akka.actor.default-dispatcher-55] DEBUG com.intuit.karate - response time in milliseconds: 568
 1 < 200
 1 < x-powered-by: Express
 1 < access-control-allow-origin: https://conduit.bondaracademy.com
 1 < vary: Origin
 1 < content-type: application/json; charset=utf-8
 1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
-1 < X-Cloud-Trace-Context: 0388c86e11e0ff13e2446dbd7a855e69
-1 < Date: Thu, 22 Aug 2024 11:38:48 GMT
+1 < X-Cloud-Trace-Context: 5ff31e98eab71097807bd4c3e8ebaa14
+1 < Date: Thu, 22 Aug 2024 11:41:29 GMT
 1 < Server: Google Frontend
 1 < Content-Length: 119
 {"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
 
-13:38:49.497 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1477
+13:41:30.947 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:30.970 [GatlingSystem-akka.actor.default-dispatcher-63] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:30.976 [GatlingSystem-akka.actor.default-dispatcher-63] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:31.570 [GatlingSystem-akka.actor.default-dispatcher-63] DEBUG com.intuit.karate - response time in milliseconds: 592
 1 < 200
 1 < x-powered-by: Express
 1 < access-control-allow-origin: https://conduit.bondaracademy.com
 1 < vary: Origin
 1 < content-type: application/json; charset=utf-8
 1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
-1 < X-Cloud-Trace-Context: 7435f284c1639cab76a1ef0f9bf2c0d9
-1 < Date: Thu, 22 Aug 2024 11:38:48 GMT
+1 < X-Cloud-Trace-Context: e5e8a1ef93554ed4bd35a3259e8eadfa
+1 < Date: Thu, 22 Aug 2024 11:41:30 GMT
 1 < Server: Google Frontend
 1 < Content-Length: 119
 {"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
 
-13:38:50.582 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/conduittagstests/tags.feature
+13:41:31.949 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:31.963 [GatlingSystem-akka.actor.default-dispatcher-75] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:31.971 [GatlingSystem-akka.actor.default-dispatcher-75] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:32.574 [GatlingSystem-akka.actor.default-dispatcher-75] DEBUG com.intuit.karate - response time in milliseconds: 601
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 3c5e07e102bd6360cc234b96f06c9e84
+1 < Date: Thu, 22 Aug 2024 11:41:31 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:32.955 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:32.976 [GatlingSystem-akka.actor.default-dispatcher-85] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:32.983 [GatlingSystem-akka.actor.default-dispatcher-85] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:33.551 [GatlingSystem-akka.actor.default-dispatcher-85] DEBUG com.intuit.karate - response time in milliseconds: 565
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: cdad62196be9ee1f867b0d502d1b9bf2
+1 < Date: Thu, 22 Aug 2024 11:41:32 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:33.960 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:33.980 [GatlingSystem-akka.actor.default-dispatcher-97] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:33.987 [GatlingSystem-akka.actor.default-dispatcher-97] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:34.543 [GatlingSystem-akka.actor.default-dispatcher-97] DEBUG com.intuit.karate - response time in milliseconds: 555
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 7f41e20e20d8c0aeaf85b4beaab7602f
+1 < Date: Thu, 22 Aug 2024 11:41:33 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:34.959 [gatling-1-9] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:34.972 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:34.979 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:35.566 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - response time in milliseconds: 584
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: cdf6c6ec60c477dc731849d1f28b34de
+1 < Date: Thu, 22 Aug 2024 11:41:34 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:35.957 [gatling-1-10] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:35.970 [GatlingSystem-akka.actor.default-dispatcher-18] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:35.975 [GatlingSystem-akka.actor.default-dispatcher-18] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:36.606 [GatlingSystem-akka.actor.default-dispatcher-18] DEBUG com.intuit.karate - response time in milliseconds: 628
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 7ea98d447879ba09354aa11f4007078e
+1 < Date: Thu, 22 Aug 2024 11:41:35 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:36.952 [gatling-1-11] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:36.965 [GatlingSystem-akka.actor.default-dispatcher-27] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:36.971 [GatlingSystem-akka.actor.default-dispatcher-27] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:37.569 [GatlingSystem-akka.actor.default-dispatcher-27] DEBUG com.intuit.karate - response time in milliseconds: 596
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 1240df2a9e0e1e57843755b143580bec
+1 < Date: Thu, 22 Aug 2024 11:41:36 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:37.944 [gatling-1-12] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:37.971 [GatlingSystem-akka.actor.default-dispatcher-37] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:37.975 [GatlingSystem-akka.actor.default-dispatcher-37] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:38.461 [gatling-1-13] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:38.478 [GatlingSystem-akka.actor.default-dispatcher-40] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:38.484 [GatlingSystem-akka.actor.default-dispatcher-40] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:38.552 [GatlingSystem-akka.actor.default-dispatcher-37] DEBUG com.intuit.karate - response time in milliseconds: 575
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: b5553394c2478a22e6cbe238a0df0361
+1 < Date: Thu, 22 Aug 2024 11:41:37 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:38.960 [gatling-1-14] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:38.974 [GatlingSystem-akka.actor.default-dispatcher-52] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:38.978 [GatlingSystem-akka.actor.default-dispatcher-52] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:39.060 [GatlingSystem-akka.actor.default-dispatcher-40] DEBUG com.intuit.karate - response time in milliseconds: 574
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 796e54b3830a432826b0ec2761bba4a1
+1 < Date: Thu, 22 Aug 2024 11:41:38 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:39.456 [gatling-1-15] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:39.469 [GatlingSystem-akka.actor.default-dispatcher-60] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:39.475 [GatlingSystem-akka.actor.default-dispatcher-60] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:39.956 [gatling-1-16] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:39.976 [GatlingSystem-akka.actor.default-dispatcher-66] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:39.982 [GatlingSystem-akka.actor.default-dispatcher-66] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:40.034 [GatlingSystem-akka.actor.default-dispatcher-60] DEBUG com.intuit.karate - response time in milliseconds: 557
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 3f88e054822b7ce5f6048cc9f405a946;o=1
+1 < Date: Thu, 22 Aug 2024 11:41:39 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:40.322 [GatlingSystem-akka.actor.default-dispatcher-52] DEBUG com.intuit.karate - response time in milliseconds: 1342
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 99fe2474e1ed046680585642b0232e81
+1 < Date: Thu, 22 Aug 2024 11:41:39 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:40.453 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:40.465 [GatlingSystem-akka.actor.default-dispatcher-79] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:40.471 [GatlingSystem-akka.actor.default-dispatcher-79] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:40.598 [GatlingSystem-akka.actor.default-dispatcher-66] DEBUG com.intuit.karate - response time in milliseconds: 613
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 18aa3fcac23159246be96882bd7c858e
+1 < Date: Thu, 22 Aug 2024 11:41:39 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:40.950 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:40.961 [GatlingSystem-akka.actor.default-dispatcher-87] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:40.966 [GatlingSystem-akka.actor.default-dispatcher-87] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:41.058 [GatlingSystem-akka.actor.default-dispatcher-79] DEBUG com.intuit.karate - response time in milliseconds: 585
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: a99654dd3ff12198420873c1b7c4990c
+1 < Date: Thu, 22 Aug 2024 11:41:40 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:41.449 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:41.463 [GatlingSystem-akka.actor.default-dispatcher-96] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:41.468 [GatlingSystem-akka.actor.default-dispatcher-96] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:41.536 [GatlingSystem-akka.actor.default-dispatcher-87] DEBUG com.intuit.karate - response time in milliseconds: 568
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 1f0803ea3ed789d4d9b994a747a209e4
+1 < Date: Thu, 22 Aug 2024 11:41:40 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:41.945 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:41.959 [GatlingSystem-akka.actor.default-dispatcher-103] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:41.964 [GatlingSystem-akka.actor.default-dispatcher-103] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:42.052 [GatlingSystem-akka.actor.default-dispatcher-96] DEBUG com.intuit.karate - response time in milliseconds: 582
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 1f5d1166b6818aa9ba133071bb97e2e3
+1 < Date: Thu, 22 Aug 2024 11:41:41 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:42.459 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:42.475 [GatlingSystem-akka.actor.default-dispatcher-15] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:42.480 [GatlingSystem-akka.actor.default-dispatcher-15] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:42.537 [GatlingSystem-akka.actor.default-dispatcher-103] DEBUG com.intuit.karate - response time in milliseconds: 570
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 285537f03c737190b95c6be2d4e4184f
+1 < Date: Thu, 22 Aug 2024 11:41:41 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:42.956 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:42.967 [GatlingSystem-akka.actor.default-dispatcher-25] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:42.972 [GatlingSystem-akka.actor.default-dispatcher-25] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:43.060 [GatlingSystem-akka.actor.default-dispatcher-15] DEBUG com.intuit.karate - response time in milliseconds: 577
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: fa2df099b829d1331e3c57079a3bfade
+1 < Date: Thu, 22 Aug 2024 11:41:42 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:43.452 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:43.463 [GatlingSystem-akka.actor.default-dispatcher-32] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:43.467 [GatlingSystem-akka.actor.default-dispatcher-32] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:43.534 [GatlingSystem-akka.actor.default-dispatcher-25] DEBUG com.intuit.karate - response time in milliseconds: 559
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 8ff5adca80334f039635545a63058d54
+1 < Date: Thu, 22 Aug 2024 11:41:42 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:43.951 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:43.967 [GatlingSystem-akka.actor.default-dispatcher-46] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:43.973 [GatlingSystem-akka.actor.default-dispatcher-46] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:44.046 [GatlingSystem-akka.actor.default-dispatcher-32] DEBUG com.intuit.karate - response time in milliseconds: 576
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: a5888e00e701573e5a91bdbab97bb0fc
+1 < Date: Thu, 22 Aug 2024 11:41:43 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:44.447 [gatling-1-9] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:44.457 [GatlingSystem-akka.actor.default-dispatcher-54] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:44.461 [GatlingSystem-akka.actor.default-dispatcher-54] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:44.553 [GatlingSystem-akka.actor.default-dispatcher-46] DEBUG com.intuit.karate - response time in milliseconds: 577
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 1fa3075a435fea31cf054ae3cb1315c4
+1 < Date: Thu, 22 Aug 2024 11:41:43 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:44.946 [gatling-1-10] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:44.957 [GatlingSystem-akka.actor.default-dispatcher-65] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:44.962 [GatlingSystem-akka.actor.default-dispatcher-65] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:45.031 [GatlingSystem-akka.actor.default-dispatcher-54] DEBUG com.intuit.karate - response time in milliseconds: 567
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 0b61b156ed4ff9ac049f4189540c5b48
+1 < Date: Thu, 22 Aug 2024 11:41:44 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:45.460 [gatling-1-11] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:45.485 [GatlingSystem-akka.actor.default-dispatcher-72] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:45.488 [GatlingSystem-akka.actor.default-dispatcher-72] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:45.538 [GatlingSystem-akka.actor.default-dispatcher-65] DEBUG com.intuit.karate - response time in milliseconds: 573
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 192d66557acae05675fb7b977b7ec096
+1 < Date: Thu, 22 Aug 2024 11:41:44 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:45.947 [gatling-1-12] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:45.958 [GatlingSystem-akka.actor.default-dispatcher-80] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:45.962 [GatlingSystem-akka.actor.default-dispatcher-80] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:46.099 [GatlingSystem-akka.actor.default-dispatcher-72] DEBUG com.intuit.karate - response time in milliseconds: 609
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 6120c7b067ef69bdb953f0105d07a1d9
+1 < Date: Thu, 22 Aug 2024 11:41:45 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:46.449 [gatling-1-13] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:46.458 [GatlingSystem-akka.actor.default-dispatcher-90] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:46.462 [GatlingSystem-akka.actor.default-dispatcher-90] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:46.726 [GatlingSystem-akka.actor.default-dispatcher-80] DEBUG com.intuit.karate - response time in milliseconds: 761
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 372eca3298cba3c88a4da27af69a7d00
+1 < Date: Thu, 22 Aug 2024 11:41:45 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:46.950 [gatling-1-14] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:46.957 [GatlingSystem-akka.actor.default-dispatcher-97] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:46.961 [GatlingSystem-akka.actor.default-dispatcher-97] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:47.023 [GatlingSystem-akka.actor.default-dispatcher-90] DEBUG com.intuit.karate - response time in milliseconds: 558
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 24a8f63e16d0ca8340d3c513996b5e67
+1 < Date: Thu, 22 Aug 2024 11:41:46 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:47.448 [gatling-1-15] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:47.460 [GatlingSystem-akka.actor.default-dispatcher-9] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:47.466 [GatlingSystem-akka.actor.default-dispatcher-9] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:47.918 [GatlingSystem-akka.actor.default-dispatcher-97] DEBUG com.intuit.karate - response time in milliseconds: 954
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: b7f0bfd006ada13a2da49239d6f4273c
+1 < Date: Thu, 22 Aug 2024 11:41:46 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:47.962 [gatling-1-16] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:47.973 [GatlingSystem-akka.actor.default-dispatcher-19] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:47.977 [GatlingSystem-akka.actor.default-dispatcher-19] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:48.064 [GatlingSystem-akka.actor.default-dispatcher-9] DEBUG com.intuit.karate - response time in milliseconds: 595
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 65fafa24687ea6c7f9ddd7fda0682c27
+1 < Date: Thu, 22 Aug 2024 11:41:47 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:48.459 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:48.469 [GatlingSystem-akka.actor.default-dispatcher-28] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:48.474 [GatlingSystem-akka.actor.default-dispatcher-28] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:48.553 [GatlingSystem-akka.actor.default-dispatcher-19] DEBUG com.intuit.karate - response time in milliseconds: 574
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 27c67bbff10411da4197097420eab374
+1 < Date: Thu, 22 Aug 2024 11:41:47 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:48.959 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:48.975 [GatlingSystem-akka.actor.default-dispatcher-39] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:48.979 [GatlingSystem-akka.actor.default-dispatcher-39] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:49.058 [GatlingSystem-akka.actor.default-dispatcher-28] DEBUG com.intuit.karate - response time in milliseconds: 577
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 94b6a2eb1c67f4d51180b84c87a752a7
+1 < Date: Thu, 22 Aug 2024 11:41:48 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:49.453 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:49.462 [GatlingSystem-akka.actor.default-dispatcher-49] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:49.467 [GatlingSystem-akka.actor.default-dispatcher-49] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:49.543 [GatlingSystem-akka.actor.default-dispatcher-39] DEBUG com.intuit.karate - response time in milliseconds: 563
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: fc0811e3e1387368e36087832d1d4c6c
+1 < Date: Thu, 22 Aug 2024 11:41:48 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:49.954 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:49.958 [GatlingSystem-akka.actor.default-dispatcher-40] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:49.960 [GatlingSystem-akka.actor.default-dispatcher-40] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:50.042 [GatlingSystem-akka.actor.default-dispatcher-49] DEBUG com.intuit.karate - response time in milliseconds: 574
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 05530d2d47125298794717238e1a28eb;o=1
+1 < Date: Thu, 22 Aug 2024 11:41:49 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:50.291 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:50.302 [GatlingSystem-akka.actor.default-dispatcher-68] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:50.306 [GatlingSystem-akka.actor.default-dispatcher-68] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:50.528 [GatlingSystem-akka.actor.default-dispatcher-40] DEBUG com.intuit.karate - response time in milliseconds: 566
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: abd4c46bab4247cd3c22f6e2c833ccfd
+1 < Date: Thu, 22 Aug 2024 11:41:49 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:50.615 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:50.625 [GatlingSystem-akka.actor.default-dispatcher-74] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:50.629 [GatlingSystem-akka.actor.default-dispatcher-74] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:50.912 [GatlingSystem-akka.actor.default-dispatcher-68] DEBUG com.intuit.karate - response time in milliseconds: 603
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: dbfae93f463e1da527bb12c35f701329
+1 < Date: Thu, 22 Aug 2024 11:41:49 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:50.958 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:50.968 [GatlingSystem-akka.actor.default-dispatcher-83] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:50.972 [GatlingSystem-akka.actor.default-dispatcher-83] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:51.206 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:51.219 [GatlingSystem-akka.actor.default-dispatcher-72] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:51.223 [GatlingSystem-akka.actor.default-dispatcher-72] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:51.315 [GatlingSystem-akka.actor.default-dispatcher-74] DEBUG com.intuit.karate - response time in milliseconds: 685
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 9255b8352cd64b4eac0b51037e28d682
+1 < Date: Thu, 22 Aug 2024 11:41:50 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:51.456 [gatling-1-9] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:51.460 [GatlingSystem-akka.actor.default-dispatcher-80] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:51.462 [GatlingSystem-akka.actor.default-dispatcher-80] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:51.533 [GatlingSystem-akka.actor.default-dispatcher-83] DEBUG com.intuit.karate - response time in milliseconds: 560
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: e20a204df43b56cc6fb7f82c13d509d7
+1 < Date: Thu, 22 Aug 2024 11:41:50 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:51.707 [gatling-1-10] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:51.717 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:51.721 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:51.790 [GatlingSystem-akka.actor.default-dispatcher-72] DEBUG com.intuit.karate - response time in milliseconds: 564
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: a3c9fa2d40df82c68d6d82634af98f93
+1 < Date: Thu, 22 Aug 2024 11:41:50 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:51.955 [gatling-1-11] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:51.965 [GatlingSystem-akka.actor.default-dispatcher-13] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:51.971 [GatlingSystem-akka.actor.default-dispatcher-13] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:52.040 [GatlingSystem-akka.actor.default-dispatcher-80] DEBUG com.intuit.karate - response time in milliseconds: 577
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: bc2bf5f3e24f43ae468097b88c0a9dde
+1 < Date: Thu, 22 Aug 2024 11:41:51 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:52.205 [gatling-1-12] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:52.208 [GatlingSystem-akka.actor.default-dispatcher-18] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:52.211 [GatlingSystem-akka.actor.default-dispatcher-18] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:52.309 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG com.intuit.karate - response time in milliseconds: 586
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: e4eecff73887932a610eed6cec655ac3
+1 < Date: Thu, 22 Aug 2024 11:41:51 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:52.454 [gatling-1-13] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:52.464 [GatlingSystem-akka.actor.default-dispatcher-31] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:52.469 [GatlingSystem-akka.actor.default-dispatcher-31] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:52.703 [gatling-1-14] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:52.707 [GatlingSystem-akka.actor.default-dispatcher-15] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:52.709 [GatlingSystem-akka.actor.default-dispatcher-15] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:52.788 [GatlingSystem-akka.actor.default-dispatcher-18] DEBUG com.intuit.karate - response time in milliseconds: 576
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 3451d8aa52973b1b2f783c58999bf468
+1 < Date: Thu, 22 Aug 2024 11:41:51 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:52.952 [gatling-1-15] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:52.963 [GatlingSystem-akka.actor.default-dispatcher-42] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:52.969 [GatlingSystem-akka.actor.default-dispatcher-42] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:53.033 [GatlingSystem-akka.actor.default-dispatcher-31] DEBUG com.intuit.karate - response time in milliseconds: 562
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 93859fe91b227e0031b78a05948c2b44
+1 < Date: Thu, 22 Aug 2024 11:41:52 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:53.201 [gatling-1-16] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:53.205 [GatlingSystem-akka.actor.default-dispatcher-32] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:53.207 [GatlingSystem-akka.actor.default-dispatcher-32] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:53.327 [GatlingSystem-akka.actor.default-dispatcher-13] DEBUG com.intuit.karate - response time in milliseconds: 1354
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 9f2ea3eb37b1b0501ceea66006b101bc
+1 < Date: Thu, 22 Aug 2024 11:41:52 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:53.332 [GatlingSystem-akka.actor.default-dispatcher-15] DEBUG com.intuit.karate - response time in milliseconds: 621
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 191c2490fb31f1eabd2dd33de1c01819
+1 < Date: Thu, 22 Aug 2024 11:41:52 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:53.448 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:53.460 [GatlingSystem-akka.actor.default-dispatcher-64] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:53.465 [GatlingSystem-akka.actor.default-dispatcher-64] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:53.543 [GatlingSystem-akka.actor.default-dispatcher-42] DEBUG com.intuit.karate - response time in milliseconds: 571
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: c09f5c7fff0c9e41e2692c72f2392928
+1 < Date: Thu, 22 Aug 2024 11:41:52 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:53.696 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:53.706 [GatlingSystem-akka.actor.default-dispatcher-71] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:53.712 [GatlingSystem-akka.actor.default-dispatcher-71] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:53.790 [GatlingSystem-akka.actor.default-dispatcher-32] DEBUG com.intuit.karate - response time in milliseconds: 580
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: d3def27d4de270cfe028e5b844740d16
+1 < Date: Thu, 22 Aug 2024 11:41:52 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:53.945 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:53.956 [GatlingSystem-akka.actor.default-dispatcher-86] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:53.959 [GatlingSystem-akka.actor.default-dispatcher-86] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:54.194 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:54.202 [GatlingSystem-akka.actor.default-dispatcher-64] DEBUG com.intuit.karate - response time in milliseconds: 734
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 8e0e374748364b0733c0dd3533390276
+1 < Date: Thu, 22 Aug 2024 11:41:53 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:54.207 [GatlingSystem-akka.actor.default-dispatcher-89] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:54.213 [GatlingSystem-akka.actor.default-dispatcher-89] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:54.278 [GatlingSystem-akka.actor.default-dispatcher-71] DEBUG com.intuit.karate - response time in milliseconds: 564
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 02422f6579fa97a50a0b575c8ae1d2ff
+1 < Date: Thu, 22 Aug 2024 11:41:53 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:54.459 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:54.463 [GatlingSystem-akka.actor.default-dispatcher-87] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:54.465 [GatlingSystem-akka.actor.default-dispatcher-87] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:54.547 [GatlingSystem-akka.actor.default-dispatcher-86] DEBUG com.intuit.karate - response time in milliseconds: 586
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: e3551f39595eca03ea3bf8f027656914
+1 < Date: Thu, 22 Aug 2024 11:41:53 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:54.696 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:54.705 [GatlingSystem-akka.actor.default-dispatcher-12] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:54.709 [GatlingSystem-akka.actor.default-dispatcher-12] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:54.806 [GatlingSystem-akka.actor.default-dispatcher-89] DEBUG com.intuit.karate - response time in milliseconds: 590
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 107ed3d8bb80f0be52d97477bfd6e3b9
+1 < Date: Thu, 22 Aug 2024 11:41:53 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:54.959 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:54.962 [GatlingSystem-akka.actor.default-dispatcher-103] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:54.964 [GatlingSystem-akka.actor.default-dispatcher-103] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:55.053 [GatlingSystem-akka.actor.default-dispatcher-87] DEBUG com.intuit.karate - response time in milliseconds: 586
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: beca6698c74a8043f82176fa7dbdd5ce
+1 < Date: Thu, 22 Aug 2024 11:41:54 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:55.146 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:55.155 [GatlingSystem-akka.actor.default-dispatcher-29] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:55.159 [GatlingSystem-akka.actor.default-dispatcher-29] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:55.279 [GatlingSystem-akka.actor.default-dispatcher-12] DEBUG com.intuit.karate - response time in milliseconds: 568
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: e2f0807779ac6e3cb3cce1ad94e093ab
+1 < Date: Thu, 22 Aug 2024 11:41:54 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:55.347 [gatling-1-9] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:55.351 [GatlingSystem-akka.actor.default-dispatcher-18] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:55.352 [GatlingSystem-akka.actor.default-dispatcher-18] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:55.534 [GatlingSystem-akka.actor.default-dispatcher-103] DEBUG com.intuit.karate - response time in milliseconds: 568
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 1b22a23c4bc15978f670f4ffa988c3ac
+1 < Date: Thu, 22 Aug 2024 11:41:54 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:55.549 [gatling-1-10] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:55.553 [GatlingSystem-akka.actor.default-dispatcher-37] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:55.555 [GatlingSystem-akka.actor.default-dispatcher-37] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:55.754 [gatling-1-11] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:55.763 [GatlingSystem-akka.actor.default-dispatcher-48] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:55.766 [GatlingSystem-akka.actor.default-dispatcher-48] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:55.784 [GatlingSystem-akka.actor.default-dispatcher-29] DEBUG com.intuit.karate - response time in milliseconds: 623
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 4ba201b78f1a76ec64f8d8a9aab67d72
+1 < Date: Thu, 22 Aug 2024 11:41:54 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:55.919 [GatlingSystem-akka.actor.default-dispatcher-18] DEBUG com.intuit.karate - response time in milliseconds: 564
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 9e317b7c664d13a759ed289cc42e4f39
+1 < Date: Thu, 22 Aug 2024 11:41:54 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:55.957 [gatling-1-12] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:55.961 [GatlingSystem-akka.actor.default-dispatcher-15] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:55.964 [GatlingSystem-akka.actor.default-dispatcher-15] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:56.112 [gatling-1-13] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:56.121 [GatlingSystem-akka.actor.default-dispatcher-67] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:56.125 [GatlingSystem-akka.actor.default-dispatcher-67] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:56.139 [GatlingSystem-akka.actor.default-dispatcher-37] DEBUG com.intuit.karate - response time in milliseconds: 582
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 4db75ccf87e1b9e6e0462c44a6bdf4c6
+1 < Date: Thu, 22 Aug 2024 11:41:55 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:56.283 [gatling-1-14] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:56.292 [GatlingSystem-akka.actor.default-dispatcher-76] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:56.296 [GatlingSystem-akka.actor.default-dispatcher-76] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:56.325 [GatlingSystem-akka.actor.default-dispatcher-48] DEBUG com.intuit.karate - response time in milliseconds: 558
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 2163b0a3299e9104cb81352e5ecc003c
+1 < Date: Thu, 22 Aug 2024 11:41:55 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:56.454 [gatling-1-15] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:56.458 [GatlingSystem-akka.actor.default-dispatcher-75] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:56.460 [GatlingSystem-akka.actor.default-dispatcher-75] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:56.552 [GatlingSystem-akka.actor.default-dispatcher-15] DEBUG com.intuit.karate - response time in milliseconds: 586
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: d33115a2852a01ad2597c83714d45dd2
+1 < Date: Thu, 22 Aug 2024 11:41:55 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:56.625 [gatling-1-16] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:56.628 [GatlingSystem-akka.actor.default-dispatcher-64] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:56.630 [GatlingSystem-akka.actor.default-dispatcher-64] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:56.780 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:56.784 [GatlingSystem-akka.actor.default-dispatcher-79] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:56.786 [GatlingSystem-akka.actor.default-dispatcher-79] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:56.822 [GatlingSystem-akka.actor.default-dispatcher-67] DEBUG com.intuit.karate - response time in milliseconds: 695
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 2a229e2a236a52ee5b00de19d2193820
+1 < Date: Thu, 22 Aug 2024 11:41:55 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:56.952 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:56.969 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:56.970 [GatlingSystem-akka.actor.default-dispatcher-76] DEBUG com.intuit.karate - response time in milliseconds: 671
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 5f12d0c5d497d98cd41d73859b309797
+1 < Date: Thu, 22 Aug 2024 11:41:56 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:56.975 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:57.100 [GatlingSystem-akka.actor.default-dispatcher-75] DEBUG com.intuit.karate - response time in milliseconds: 638
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 67300b5b279451906f2e94aef7c1f439
+1 < Date: Thu, 22 Aug 2024 11:41:56 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:57.123 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:57.132 [GatlingSystem-akka.actor.default-dispatcher-11] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:57.137 [GatlingSystem-akka.actor.default-dispatcher-11] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:57.267 [GatlingSystem-akka.actor.default-dispatcher-64] DEBUG com.intuit.karate - response time in milliseconds: 635
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 392baab3d989eb288b848e5472c8b88c
+1 < Date: Thu, 22 Aug 2024 11:41:56 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:57.291 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:57.295 [GatlingSystem-akka.actor.default-dispatcher-17] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:57.297 [GatlingSystem-akka.actor.default-dispatcher-17] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:57.436 [GatlingSystem-akka.actor.default-dispatcher-79] DEBUG com.intuit.karate - response time in milliseconds: 648
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: be7a4be6af47f9dc7d744f0f45cc302a
+1 < Date: Thu, 22 Aug 2024 11:41:56 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:57.448 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:57.452 [GatlingSystem-akka.actor.default-dispatcher-27] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:57.454 [GatlingSystem-akka.actor.default-dispatcher-27] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:57.560 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - response time in milliseconds: 583
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 458dff349f555b102d87847ce65e7e55
+1 < Date: Thu, 22 Aug 2024 11:41:56 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:57.618 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:57.627 [GatlingSystem-akka.actor.default-dispatcher-44] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:57.631 [GatlingSystem-akka.actor.default-dispatcher-44] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:57.743 [GatlingSystem-akka.actor.default-dispatcher-11] DEBUG com.intuit.karate - response time in milliseconds: 604
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: d2f313cb69917706e606fb0cb833269c
+1 < Date: Thu, 22 Aug 2024 11:41:56 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:57.789 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:57.792 [GatlingSystem-akka.actor.default-dispatcher-39] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:57.794 [GatlingSystem-akka.actor.default-dispatcher-39] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:57.903 [GatlingSystem-akka.actor.default-dispatcher-17] DEBUG com.intuit.karate - response time in milliseconds: 603
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 4bbd23723222ced1f7d50f5884a0aef6
+1 < Date: Thu, 22 Aug 2024 11:41:56 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:57.958 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:57.966 [GatlingSystem-akka.actor.default-dispatcher-61] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:57.971 [GatlingSystem-akka.actor.default-dispatcher-61] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:58.068 [GatlingSystem-akka.actor.default-dispatcher-27] DEBUG com.intuit.karate - response time in milliseconds: 613
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 28a4048e9810a829d8099bc968b2107b
+1 < Date: Thu, 22 Aug 2024 11:41:57 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:58.115 [gatling-1-9] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:58.118 [GatlingSystem-akka.actor.default-dispatcher-54] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:58.121 [GatlingSystem-akka.actor.default-dispatcher-54] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:58.279 [GatlingSystem-akka.actor.default-dispatcher-44] DEBUG com.intuit.karate - response time in milliseconds: 645
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 8dcc12d206b807120c148ab4ba4ea48a
+1 < Date: Thu, 22 Aug 2024 11:41:57 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:58.284 [gatling-1-10] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:58.289 [GatlingSystem-akka.actor.default-dispatcher-32] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:58.292 [GatlingSystem-akka.actor.default-dispatcher-32] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:58.398 [GatlingSystem-akka.actor.default-dispatcher-39] DEBUG com.intuit.karate - response time in milliseconds: 601
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 91b5b0a2e83cc0d7ae8cabce571b9d50
+1 < Date: Thu, 22 Aug 2024 11:41:57 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:58.457 [gatling-1-11] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:58.465 [GatlingSystem-akka.actor.default-dispatcher-84] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:58.470 [GatlingSystem-akka.actor.default-dispatcher-84] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:58.582 [GatlingSystem-akka.actor.default-dispatcher-61] DEBUG com.intuit.karate - response time in milliseconds: 609
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: f01692b28a8d8577f4f102015ff3b48f
+1 < Date: Thu, 22 Aug 2024 11:41:57 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:58.625 [gatling-1-12] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:58.636 [GatlingSystem-akka.actor.default-dispatcher-95] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:58.639 [GatlingSystem-akka.actor.default-dispatcher-95] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:58.774 [GatlingSystem-akka.actor.default-dispatcher-54] DEBUG com.intuit.karate - response time in milliseconds: 651
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: c007a83cd8540f77926cfe29c57b2a10
+1 < Date: Thu, 22 Aug 2024 11:41:57 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:58.780 [gatling-1-13] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:58.792 [GatlingSystem-akka.actor.default-dispatcher-102] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:58.797 [GatlingSystem-akka.actor.default-dispatcher-102] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:58.927 [GatlingSystem-akka.actor.default-dispatcher-32] DEBUG com.intuit.karate - response time in milliseconds: 634
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 7802e1b2860c9c0188fdf02d710ef946
+1 < Date: Thu, 22 Aug 2024 11:41:57 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:58.952 [gatling-1-14] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:58.955 [GatlingSystem-akka.actor.default-dispatcher-96] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:58.957 [GatlingSystem-akka.actor.default-dispatcher-96] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:59.073 [GatlingSystem-akka.actor.default-dispatcher-84] DEBUG com.intuit.karate - response time in milliseconds: 602
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: b35240dadac6cd01b2ce813d4a81f5a2
+1 < Date: Thu, 22 Aug 2024 11:41:58 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:59.123 [gatling-1-15] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:59.131 [GatlingSystem-akka.actor.default-dispatcher-24] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:59.134 [GatlingSystem-akka.actor.default-dispatcher-24] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:59.219 [GatlingSystem-akka.actor.default-dispatcher-95] DEBUG com.intuit.karate - response time in milliseconds: 578
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: a76359d05417a05721b029f69fe08986
+1 < Date: Thu, 22 Aug 2024 11:41:58 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:59.280 [gatling-1-16] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:59.290 [GatlingSystem-akka.actor.default-dispatcher-34] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:59.293 [GatlingSystem-akka.actor.default-dispatcher-34] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:59.368 [GatlingSystem-akka.actor.default-dispatcher-102] DEBUG com.intuit.karate - response time in milliseconds: 570
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: ea6f3a61c709c998ed72aac71f7d2aec
+1 < Date: Thu, 22 Aug 2024 11:41:58 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:59.450 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:59.458 [GatlingSystem-akka.actor.default-dispatcher-41] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:59.462 [GatlingSystem-akka.actor.default-dispatcher-41] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:59.532 [GatlingSystem-akka.actor.default-dispatcher-96] DEBUG com.intuit.karate - response time in milliseconds: 572
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 3495b9c30e385bac565e8a895393b4be
+1 < Date: Thu, 22 Aug 2024 11:41:58 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:59.622 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:59.627 [GatlingSystem-akka.actor.default-dispatcher-45] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:59.630 [GatlingSystem-akka.actor.default-dispatcher-45] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:59.703 [GatlingSystem-akka.actor.default-dispatcher-24] DEBUG com.intuit.karate - response time in milliseconds: 567
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 788952fcf8ff7312a0f1f5dddafa72d6
+1 < Date: Thu, 22 Aug 2024 11:41:58 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:59.789 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:59.792 [GatlingSystem-akka.actor.default-dispatcher-18] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:59.794 [GatlingSystem-akka.actor.default-dispatcher-18] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:59.856 [GatlingSystem-akka.actor.default-dispatcher-34] DEBUG com.intuit.karate - response time in milliseconds: 561
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 4f91868f2acd320f107d77fc94fe2edf
+1 < Date: Thu, 22 Aug 2024 11:41:58 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:41:59.946 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:59.953 [GatlingSystem-akka.actor.default-dispatcher-62] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:59.955 [GatlingSystem-akka.actor.default-dispatcher-62] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:00.037 [GatlingSystem-akka.actor.default-dispatcher-41] DEBUG com.intuit.karate - response time in milliseconds: 573
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: c18706f4bb4136ad6f0f1fcca8ccda0b;o=1
+1 < Date: Thu, 22 Aug 2024 11:41:59 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:00.101 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:00.104 [GatlingSystem-akka.actor.default-dispatcher-65] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:00.106 [GatlingSystem-akka.actor.default-dispatcher-65] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:00.207 [GatlingSystem-akka.actor.default-dispatcher-45] DEBUG com.intuit.karate - response time in milliseconds: 575
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 4ff7b07d7bf2cdd7d18438e0c2c9ccf1
+1 < Date: Thu, 22 Aug 2024 11:41:59 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:00.239 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:00.248 [GatlingSystem-akka.actor.default-dispatcher-81] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:00.252 [GatlingSystem-akka.actor.default-dispatcher-81] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:00.372 [GatlingSystem-akka.actor.default-dispatcher-18] DEBUG com.intuit.karate - response time in milliseconds: 576
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: b2c34e56d1a8d462db57ca5a0e91a52a
+1 < Date: Thu, 22 Aug 2024 11:41:59 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:00.378 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:00.388 [GatlingSystem-akka.actor.default-dispatcher-92] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:00.392 [GatlingSystem-akka.actor.default-dispatcher-92] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:00.519 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:00.528 [GatlingSystem-akka.actor.default-dispatcher-98] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:00.530 [GatlingSystem-akka.actor.default-dispatcher-62] DEBUG com.intuit.karate - response time in milliseconds: 573
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 5cdb32f242e392981739bdad3edf7585
+1 < Date: Thu, 22 Aug 2024 11:41:59 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:00.533 [GatlingSystem-akka.actor.default-dispatcher-98] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:00.659 [gatling-1-9] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:00.663 [GatlingSystem-akka.actor.default-dispatcher-90] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:00.665 [GatlingSystem-akka.actor.default-dispatcher-90] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:00.675 [GatlingSystem-akka.actor.default-dispatcher-65] DEBUG com.intuit.karate - response time in milliseconds: 567
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: c649ac6ffd59bd20f61fc043812987ef
+1 < Date: Thu, 22 Aug 2024 11:41:59 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:00.816 [gatling-1-10] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:00.819 [GatlingSystem-akka.actor.default-dispatcher-97] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:00.821 [GatlingSystem-akka.actor.default-dispatcher-97] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:00.957 [gatling-1-11] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:00.967 [GatlingSystem-akka.actor.default-dispatcher-16] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:00.972 [GatlingSystem-akka.actor.default-dispatcher-16] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:00.992 [GatlingSystem-akka.actor.default-dispatcher-81] DEBUG com.intuit.karate - response time in milliseconds: 738
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: cd88f90e70507dc070d548433f69652a
+1 < Date: Thu, 22 Aug 2024 11:42:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:00.992 [GatlingSystem-akka.actor.default-dispatcher-92] DEBUG com.intuit.karate - response time in milliseconds: 598
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 83ea4371e73b5619599128745b5ef0d8
+1 < Date: Thu, 22 Aug 2024 11:42:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:01.081 [gatling-1-12] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:01.089 [GatlingSystem-akka.actor.default-dispatcher-30] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:01.093 [GatlingSystem-akka.actor.default-dispatcher-30] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:01.109 [GatlingSystem-akka.actor.default-dispatcher-98] DEBUG com.intuit.karate - response time in milliseconds: 574
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: b878d0f4241472a65a7dd822749caf1b
+1 < Date: Thu, 22 Aug 2024 11:42:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:01.207 [gatling-1-13] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:01.211 [GatlingSystem-akka.actor.default-dispatcher-25] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:01.213 [GatlingSystem-akka.actor.default-dispatcher-25] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:01.226 [GatlingSystem-akka.actor.default-dispatcher-90] DEBUG com.intuit.karate - response time in milliseconds: 560
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: eefe623043ebca6f3c2ce0fe56c7514a
+1 < Date: Thu, 22 Aug 2024 11:42:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:01.332 [gatling-1-14] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:01.350 [GatlingSystem-akka.actor.default-dispatcher-47] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:01.354 [GatlingSystem-akka.actor.default-dispatcher-47] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:01.378 [GatlingSystem-akka.actor.default-dispatcher-97] DEBUG com.intuit.karate - response time in milliseconds: 555
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 3f8081b0bb1075e95745726de6266de8
+1 < Date: Thu, 22 Aug 2024 11:42:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:01.457 [gatling-1-15] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:01.466 [GatlingSystem-akka.actor.default-dispatcher-53] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:01.469 [GatlingSystem-akka.actor.default-dispatcher-53] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:01.545 [GatlingSystem-akka.actor.default-dispatcher-16] DEBUG com.intuit.karate - response time in milliseconds: 572
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 83a54ac56d8e5047a0393c87d79b145a
+1 < Date: Thu, 22 Aug 2024 11:42:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:01.586 [gatling-1-16] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:01.612 [GatlingSystem-akka.actor.default-dispatcher-55] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:01.617 [GatlingSystem-akka.actor.default-dispatcher-55] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:01.683 [GatlingSystem-akka.actor.default-dispatcher-30] DEBUG com.intuit.karate - response time in milliseconds: 588
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: db21377ec1697d6d10e919f13a1dc0e4
+1 < Date: Thu, 22 Aug 2024 11:42:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:01.702 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:01.705 [GatlingSystem-akka.actor.default-dispatcher-41] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:01.707 [GatlingSystem-akka.actor.default-dispatcher-41] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:01.779 [GatlingSystem-akka.actor.default-dispatcher-25] DEBUG com.intuit.karate - response time in milliseconds: 564
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 44f9ae7eadf64be417816e1a70ed0d34
+1 < Date: Thu, 22 Aug 2024 11:42:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:01.826 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:01.829 [GatlingSystem-akka.actor.default-dispatcher-45] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:01.831 [GatlingSystem-akka.actor.default-dispatcher-45] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:01.954 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:01.956 [GatlingSystem-akka.actor.default-dispatcher-47] DEBUG com.intuit.karate - response time in milliseconds: 600
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 6562407d48b4ac848ea6c37adb961523
+1 < Date: Thu, 22 Aug 2024 11:42:01 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:01.963 [GatlingSystem-akka.actor.default-dispatcher-88] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:01.966 [GatlingSystem-akka.actor.default-dispatcher-88] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:02.018 [GatlingSystem-akka.actor.default-dispatcher-53] DEBUG com.intuit.karate - response time in milliseconds: 547
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 8c7de25975e7efe4bab29861fa7c1ebe
+1 < Date: Thu, 22 Aug 2024 11:42:01 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:02.077 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:02.080 [GatlingSystem-akka.actor.default-dispatcher-62] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:02.082 [GatlingSystem-akka.actor.default-dispatcher-62] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:02.186 [GatlingSystem-akka.actor.default-dispatcher-55] DEBUG com.intuit.karate - response time in milliseconds: 566
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: a03d1675fcb9f37c9bce56330dbe42ef
+1 < Date: Thu, 22 Aug 2024 11:42:01 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:02.204 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:02.208 [GatlingSystem-akka.actor.default-dispatcher-65] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:02.210 [GatlingSystem-akka.actor.default-dispatcher-65] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:02.286 [GatlingSystem-akka.actor.default-dispatcher-41] DEBUG com.intuit.karate - response time in milliseconds: 578
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: cb3a192c3cd85541f28919a54f851f54
+1 < Date: Thu, 22 Aug 2024 11:42:01 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:02.328 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:02.331 [GatlingSystem-akka.actor.default-dispatcher-80] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:02.333 [GatlingSystem-akka.actor.default-dispatcher-80] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:02.453 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:02.456 [GatlingSystem-akka.actor.default-dispatcher-84] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:02.456 [GatlingSystem-akka.actor.default-dispatcher-45] DEBUG com.intuit.karate - response time in milliseconds: 624
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 1a321ee6e1ea92a28536780fa0a4f903
+1 < Date: Thu, 22 Aug 2024 11:42:01 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:02.458 [GatlingSystem-akka.actor.default-dispatcher-84] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:02.531 [GatlingSystem-akka.actor.default-dispatcher-88] DEBUG com.intuit.karate - response time in milliseconds: 563
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 895d40de5dc8a5c4e565823e3a5cf2a0
+1 < Date: Thu, 22 Aug 2024 11:42:01 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:02.577 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:02.585 [GatlingSystem-akka.actor.default-dispatcher-35] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:02.588 [GatlingSystem-akka.actor.default-dispatcher-35] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:02.688 [GatlingSystem-akka.actor.default-dispatcher-62] DEBUG com.intuit.karate - response time in milliseconds: 605
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 969f110684bd6c11de3fa56229950841
+1 < Date: Thu, 22 Aug 2024 11:42:01 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:02.703 [gatling-1-9] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:02.713 [GatlingSystem-akka.actor.default-dispatcher-43] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:02.716 [GatlingSystem-akka.actor.default-dispatcher-43] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:02.776 [GatlingSystem-akka.actor.default-dispatcher-65] DEBUG com.intuit.karate - response time in milliseconds: 565
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 15dc7c2ef43bb5df5f45152663fe7b59
+1 < Date: Thu, 22 Aug 2024 11:42:01 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:02.826 [gatling-1-10] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:02.829 [GatlingSystem-akka.actor.default-dispatcher-29] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:02.832 [GatlingSystem-akka.actor.default-dispatcher-29] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:02.912 [GatlingSystem-akka.actor.default-dispatcher-80] DEBUG com.intuit.karate - response time in milliseconds: 578
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: b3f454d6cb19b85813f86259cf3a64c9
+1 < Date: Thu, 22 Aug 2024 11:42:01 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:02.948 [gatling-1-11] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:02.962 [GatlingSystem-akka.actor.default-dispatcher-59] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:02.967 [GatlingSystem-akka.actor.default-dispatcher-59] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:03.022 [GatlingSystem-akka.actor.default-dispatcher-84] DEBUG com.intuit.karate - response time in milliseconds: 561
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 1f79305f57a2ea2f7718c501266c4bb2
+1 < Date: Thu, 22 Aug 2024 11:42:02 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:03.071 [gatling-1-12] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:03.074 [GatlingSystem-akka.actor.default-dispatcher-30] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:03.076 [GatlingSystem-akka.actor.default-dispatcher-30] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:03.178 [GatlingSystem-akka.actor.default-dispatcher-35] DEBUG com.intuit.karate - response time in milliseconds: 588
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: b5ff846b7257a533829137522c576448
+1 < Date: Thu, 22 Aug 2024 11:42:02 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:03.210 [gatling-1-13] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:03.214 [GatlingSystem-akka.actor.default-dispatcher-25] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:03.216 [GatlingSystem-akka.actor.default-dispatcher-25] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:03.285 [GatlingSystem-akka.actor.default-dispatcher-43] DEBUG com.intuit.karate - response time in milliseconds: 568
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 28d8e27be8d5c2029fd4c64e929b0d9e
+1 < Date: Thu, 22 Aug 2024 11:42:02 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:03.332 [gatling-1-14] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:03.340 [GatlingSystem-akka.actor.default-dispatcher-91] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:03.343 [GatlingSystem-akka.actor.default-dispatcher-91] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:03.415 [GatlingSystem-akka.actor.default-dispatcher-29] DEBUG com.intuit.karate - response time in milliseconds: 582
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 8c1a202dad82cbac3ad33fd12f20476a
+1 < Date: Thu, 22 Aug 2024 11:42:02 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:03.453 [gatling-1-15] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:03.465 [GatlingSystem-akka.actor.default-dispatcher-99] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:03.470 [GatlingSystem-akka.actor.default-dispatcher-99] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:03.576 [gatling-1-16] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:03.579 [GatlingSystem-akka.actor.default-dispatcher-59] DEBUG com.intuit.karate - response time in milliseconds: 610
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 3669329df382781eee099c7a802addb7
+1 < Date: Thu, 22 Aug 2024 11:42:02 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:03.579 [GatlingSystem-akka.actor.default-dispatcher-67] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:03.582 [GatlingSystem-akka.actor.default-dispatcher-67] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:03.650 [GatlingSystem-akka.actor.default-dispatcher-30] DEBUG com.intuit.karate - response time in milliseconds: 573
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 22f6eb1c60f51eff9078ea766b0734af
+1 < Date: Thu, 22 Aug 2024 11:42:02 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:03.698 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:03.707 [GatlingSystem-akka.actor.default-dispatcher-14] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:03.710 [GatlingSystem-akka.actor.default-dispatcher-14] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:03.799 [GatlingSystem-akka.actor.default-dispatcher-25] DEBUG com.intuit.karate - response time in milliseconds: 581
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 7ed725aa3fc9deab983f3296e66cc73a
+1 < Date: Thu, 22 Aug 2024 11:42:02 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:03.822 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:03.825 [GatlingSystem-akka.actor.default-dispatcher-81] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:03.827 [GatlingSystem-akka.actor.default-dispatcher-81] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:03.936 [GatlingSystem-akka.actor.default-dispatcher-91] DEBUG com.intuit.karate - response time in milliseconds: 592
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 9744c2a1abe667de63df6444f8bb6b54
+1 < Date: Thu, 22 Aug 2024 11:42:02 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:03.959 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:03.962 [GatlingSystem-akka.actor.default-dispatcher-79] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:03.964 [GatlingSystem-akka.actor.default-dispatcher-79] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:04.069 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:04.072 [GatlingSystem-akka.actor.default-dispatcher-12] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:04.073 [GatlingSystem-akka.actor.default-dispatcher-99] DEBUG com.intuit.karate - response time in milliseconds: 600
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: e408eb432a75bb85399fa4518fe89d91
+1 < Date: Thu, 22 Aug 2024 11:42:03 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:04.074 [GatlingSystem-akka.actor.default-dispatcher-12] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:04.169 [GatlingSystem-akka.actor.default-dispatcher-67] DEBUG com.intuit.karate - response time in milliseconds: 585
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 21ae2b46c91e450cf5a52a9311360935
+1 < Date: Thu, 22 Aug 2024 11:42:03 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:04.194 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:04.198 [GatlingSystem-akka.actor.default-dispatcher-11] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:04.200 [GatlingSystem-akka.actor.default-dispatcher-11] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:04.286 [GatlingSystem-akka.actor.default-dispatcher-14] DEBUG com.intuit.karate - response time in milliseconds: 574
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 6346bedcbdfe88f5d83798548958a69e
+1 < Date: Thu, 22 Aug 2024 11:42:03 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:04.331 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:04.335 [GatlingSystem-akka.actor.default-dispatcher-17] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:04.337 [GatlingSystem-akka.actor.default-dispatcher-17] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:04.401 [GatlingSystem-akka.actor.default-dispatcher-81] DEBUG com.intuit.karate - response time in milliseconds: 572
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 90faaf9520c92b7c77dd7536ae624bfe
+1 < Date: Thu, 22 Aug 2024 11:42:03 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:04.454 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:04.457 [GatlingSystem-akka.actor.default-dispatcher-84] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:04.459 [GatlingSystem-akka.actor.default-dispatcher-84] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:04.536 [GatlingSystem-akka.actor.default-dispatcher-79] DEBUG com.intuit.karate - response time in milliseconds: 570
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: dee9ad6fa8fa5037ce518f885a095569
+1 < Date: Thu, 22 Aug 2024 11:42:03 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:04.578 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:04.581 [GatlingSystem-akka.actor.default-dispatcher-35] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:04.583 [GatlingSystem-akka.actor.default-dispatcher-35] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:04.666 [GatlingSystem-akka.actor.default-dispatcher-12] DEBUG com.intuit.karate - response time in milliseconds: 590
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 9c52196adf9ecd008a0c7a9ec9a83942
+1 < Date: Thu, 22 Aug 2024 11:42:03 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:04.702 [gatling-1-9] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:04.706 [GatlingSystem-akka.actor.default-dispatcher-43] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:04.708 [GatlingSystem-akka.actor.default-dispatcher-43] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:04.782 [GatlingSystem-akka.actor.default-dispatcher-11] DEBUG com.intuit.karate - response time in milliseconds: 580
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: eb42917bfb0c0975b7a4792a71f9a6d0
+1 < Date: Thu, 22 Aug 2024 11:42:03 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:04.825 [gatling-1-10] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:04.833 [GatlingSystem-akka.actor.default-dispatcher-29] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:04.834 [GatlingSystem-akka.actor.default-dispatcher-29] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:04.911 [GatlingSystem-akka.actor.default-dispatcher-17] DEBUG com.intuit.karate - response time in milliseconds: 573
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 977dfef36091e79deeb7f1b01f7ff939
+1 < Date: Thu, 22 Aug 2024 11:42:03 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:04.949 [gatling-1-11] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:04.953 [GatlingSystem-akka.actor.default-dispatcher-59] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:04.955 [GatlingSystem-akka.actor.default-dispatcher-59] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:05.017 [GatlingSystem-akka.actor.default-dispatcher-84] DEBUG com.intuit.karate - response time in milliseconds: 557
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 88b86f61e39856f04c2f2cd61ea737df
+1 < Date: Thu, 22 Aug 2024 11:42:04 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:05.057 [gatling-1-12] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:05.061 [GatlingSystem-akka.actor.default-dispatcher-76] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:05.063 [GatlingSystem-akka.actor.default-dispatcher-76] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:05.179 [gatling-1-13] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:05.182 [GatlingSystem-akka.actor.default-dispatcher-41] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:05.184 [GatlingSystem-akka.actor.default-dispatcher-41] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:05.206 [GatlingSystem-akka.actor.default-dispatcher-35] DEBUG com.intuit.karate - response time in milliseconds: 621
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: a1f48146794a2f00ec78c12681685b40
+1 < Date: Thu, 22 Aug 2024 11:42:04 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:05.289 [gatling-1-14] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:05.292 [GatlingSystem-akka.actor.default-dispatcher-64] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:05.294 [GatlingSystem-akka.actor.default-dispatcher-64] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:05.296 [GatlingSystem-akka.actor.default-dispatcher-43] DEBUG com.intuit.karate - response time in milliseconds: 586
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: bbbf26ef6c9c7fc2ed73e35b89732380
+1 < Date: Thu, 22 Aug 2024 11:42:04 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:05.397 [gatling-1-15] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:05.400 [GatlingSystem-akka.actor.default-dispatcher-95] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:05.402 [GatlingSystem-akka.actor.default-dispatcher-95] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:05.429 [GatlingSystem-akka.actor.default-dispatcher-29] DEBUG com.intuit.karate - response time in milliseconds: 594
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: a1195ecf0db5ca39d5d77a840ffe1e0f
+1 < Date: Thu, 22 Aug 2024 11:42:04 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:05.504 [gatling-1-16] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:05.509 [GatlingSystem-akka.actor.default-dispatcher-62] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:05.513 [GatlingSystem-akka.actor.default-dispatcher-62] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:05.513 [GatlingSystem-akka.actor.default-dispatcher-59] DEBUG com.intuit.karate - response time in milliseconds: 556
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 38e6b2ac8286276487b8ac668cddb59d
+1 < Date: Thu, 22 Aug 2024 11:42:04 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:05.611 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:05.616 [GatlingSystem-akka.actor.default-dispatcher-96] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:05.619 [GatlingSystem-akka.actor.default-dispatcher-96] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:05.627 [GatlingSystem-akka.actor.default-dispatcher-76] DEBUG com.intuit.karate - response time in milliseconds: 562
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 59321deea2c03f6ec7c359af86ea5340
+1 < Date: Thu, 22 Aug 2024 11:42:04 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:05.733 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:05.736 [GatlingSystem-akka.actor.default-dispatcher-24] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:05.738 [GatlingSystem-akka.actor.default-dispatcher-24] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:05.764 [GatlingSystem-akka.actor.default-dispatcher-41] DEBUG com.intuit.karate - response time in milliseconds: 578
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: d3396b9bf7bd9fdc75231dd34719e1d9
+1 < Date: Thu, 22 Aug 2024 11:42:04 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:05.839 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:05.843 [GatlingSystem-akka.actor.default-dispatcher-49] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:05.845 [GatlingSystem-akka.actor.default-dispatcher-49] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:05.875 [GatlingSystem-akka.actor.default-dispatcher-64] DEBUG com.intuit.karate - response time in milliseconds: 579
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: bf2b06a60878dc74e6899dc7fe2572df
+1 < Date: Thu, 22 Aug 2024 11:42:04 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:05.946 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:05.956 [GatlingSystem-akka.actor.default-dispatcher-73] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:05.959 [GatlingSystem-akka.actor.default-dispatcher-73] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:05.981 [GatlingSystem-akka.actor.default-dispatcher-95] DEBUG com.intuit.karate - response time in milliseconds: 577
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 38870a56915bd9d61596ad46ebb5bdf3
+1 < Date: Thu, 22 Aug 2024 11:42:05 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:06.054 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:06.061 [GatlingSystem-akka.actor.default-dispatcher-78] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:06.065 [GatlingSystem-akka.actor.default-dispatcher-78] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:06.081 [GatlingSystem-akka.actor.default-dispatcher-62] DEBUG com.intuit.karate - response time in milliseconds: 566
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: c2e2331752a2751b45915f750497a715
+1 < Date: Thu, 22 Aug 2024 11:42:05 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:06.149 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:06.152 [GatlingSystem-akka.actor.default-dispatcher-74] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:06.153 [GatlingSystem-akka.actor.default-dispatcher-74] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:06.198 [GatlingSystem-akka.actor.default-dispatcher-96] DEBUG com.intuit.karate - response time in milliseconds: 576
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: aa05f13da5e62cee3a47240f0971dedf
+1 < Date: Thu, 22 Aug 2024 11:42:05 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:06.257 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:06.260 [GatlingSystem-akka.actor.default-dispatcher-54] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:06.262 [GatlingSystem-akka.actor.default-dispatcher-54] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:06.336 [GatlingSystem-akka.actor.default-dispatcher-24] DEBUG com.intuit.karate - response time in milliseconds: 597
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: af83facbed285ac76e8e4d99e148cb85
+1 < Date: Thu, 22 Aug 2024 11:42:05 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:06.351 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:06.354 [GatlingSystem-akka.actor.default-dispatcher-72] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:06.356 [GatlingSystem-akka.actor.default-dispatcher-72] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:06.410 [GatlingSystem-akka.actor.default-dispatcher-49] DEBUG com.intuit.karate - response time in milliseconds: 564
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 02beaaa6d3aa23ed7610a74a7305c59a
+1 < Date: Thu, 22 Aug 2024 11:42:05 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:06.444 [gatling-1-9] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:06.447 [GatlingSystem-akka.actor.default-dispatcher-25] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:06.449 [GatlingSystem-akka.actor.default-dispatcher-25] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:06.550 [gatling-1-10] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:06.559 [GatlingSystem-akka.actor.default-dispatcher-20] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:06.563 [GatlingSystem-akka.actor.default-dispatcher-20] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:06.657 [gatling-1-11] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:06.661 [GatlingSystem-akka.actor.default-dispatcher-45] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:06.662 [GatlingSystem-akka.actor.default-dispatcher-78] DEBUG com.intuit.karate - response time in milliseconds: 595
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: e84daf2a8edc947f48c055c3b5d94dc4
+1 < Date: Thu, 22 Aug 2024 11:42:05 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:06.663 [GatlingSystem-akka.actor.default-dispatcher-45] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:06.737 [GatlingSystem-akka.actor.default-dispatcher-73] DEBUG com.intuit.karate - response time in milliseconds: 776
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: dd660de0a550e015b4530e0f5aa86775
+1 < Date: Thu, 22 Aug 2024 11:42:05 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:06.742 [GatlingSystem-akka.actor.default-dispatcher-74] DEBUG com.intuit.karate - response time in milliseconds: 587
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 5dbe50cd32086b3f517c76430cbf46a6
+1 < Date: Thu, 22 Aug 2024 11:42:05 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:06.752 [gatling-1-12] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:06.759 [GatlingSystem-akka.actor.default-dispatcher-36] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:06.762 [GatlingSystem-akka.actor.default-dispatcher-36] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:06.858 [gatling-1-13] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:06.861 [GatlingSystem-akka.actor.default-dispatcher-28] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:06.863 [GatlingSystem-akka.actor.default-dispatcher-28] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:06.906 [GatlingSystem-akka.actor.default-dispatcher-54] DEBUG com.intuit.karate - response time in milliseconds: 643
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: fc636ff06a4b6a1751d361515b1988ce
+1 < Date: Thu, 22 Aug 2024 11:42:05 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:06.930 [GatlingSystem-akka.actor.default-dispatcher-72] DEBUG com.intuit.karate - response time in milliseconds: 572
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 7dbe40543b2a6ca9abf22ff02297b04f
+1 < Date: Thu, 22 Aug 2024 11:42:05 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:06.951 [gatling-1-14] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:06.959 [GatlingSystem-akka.actor.default-dispatcher-56] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:06.962 [GatlingSystem-akka.actor.default-dispatcher-56] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:07.043 [GatlingSystem-akka.actor.default-dispatcher-25] DEBUG com.intuit.karate - response time in milliseconds: 592
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: b51963977e2ffe8db99a864cc543b5a6
+1 < Date: Thu, 22 Aug 2024 11:42:06 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:07.058 [gatling-1-15] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:07.061 [GatlingSystem-akka.actor.default-dispatcher-79] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:07.063 [GatlingSystem-akka.actor.default-dispatcher-79] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:07.122 [GatlingSystem-akka.actor.default-dispatcher-20] DEBUG com.intuit.karate - response time in milliseconds: 558
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 4de385e1a4377a76dfa1de2e3b6f5bb5
+1 < Date: Thu, 22 Aug 2024 11:42:06 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:07.150 [gatling-1-16] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:07.157 [GatlingSystem-akka.actor.default-dispatcher-77] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:07.160 [GatlingSystem-akka.actor.default-dispatcher-77] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:07.247 [GatlingSystem-akka.actor.default-dispatcher-45] DEBUG com.intuit.karate - response time in milliseconds: 581
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 9e3bde9c7b00cf76184564b70fbd36c3
+1 < Date: Thu, 22 Aug 2024 11:42:06 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:07.260 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:07.263 [GatlingSystem-akka.actor.default-dispatcher-15] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:07.265 [GatlingSystem-akka.actor.default-dispatcher-15] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:07.330 [GatlingSystem-akka.actor.default-dispatcher-36] DEBUG com.intuit.karate - response time in milliseconds: 566
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 924823dff38b4ff84084c9d58948c4fb
+1 < Date: Thu, 22 Aug 2024 11:42:06 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:07.352 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:07.355 [GatlingSystem-akka.actor.default-dispatcher-53] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:07.356 [GatlingSystem-akka.actor.default-dispatcher-53] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:07.436 [GatlingSystem-akka.actor.default-dispatcher-28] DEBUG com.intuit.karate - response time in milliseconds: 571
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 8bf313a39701c449490a07f2a4181c53
+1 < Date: Thu, 22 Aug 2024 11:42:06 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:07.458 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:07.461 [GatlingSystem-akka.actor.default-dispatcher-86] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:07.462 [GatlingSystem-akka.actor.default-dispatcher-86] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:07.516 [GatlingSystem-akka.actor.default-dispatcher-56] DEBUG com.intuit.karate - response time in milliseconds: 553
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 0b58266de0661aa2b3d87a1afb31cb93
+1 < Date: Thu, 22 Aug 2024 11:42:06 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:07.552 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:07.564 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:07.568 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:07.645 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:07.648 [GatlingSystem-akka.actor.default-dispatcher-79] DEBUG com.intuit.karate - response time in milliseconds: 583
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 8d75923d44092a14b83c4f91d9d0e48b
+1 < Date: Thu, 22 Aug 2024 11:42:06 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:07.650 [GatlingSystem-akka.actor.default-dispatcher-89] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:07.652 [GatlingSystem-akka.actor.default-dispatcher-89] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:07.741 [GatlingSystem-akka.actor.default-dispatcher-77] DEBUG com.intuit.karate - response time in milliseconds: 580
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: d58a1a916c809d68f8ff04980f68fdff
+1 < Date: Thu, 22 Aug 2024 11:42:06 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:07.751 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:07.762 [GatlingSystem-akka.actor.default-dispatcher-23] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:07.766 [GatlingSystem-akka.actor.default-dispatcher-23] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:07.828 [GatlingSystem-akka.actor.default-dispatcher-15] DEBUG com.intuit.karate - response time in milliseconds: 561
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 1acd602d36686e1f28924775ff7344ea
+1 < Date: Thu, 22 Aug 2024 11:42:06 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:07.860 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:07.863 [GatlingSystem-akka.actor.default-dispatcher-33] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:07.866 [GatlingSystem-akka.actor.default-dispatcher-33] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:08.015 [GatlingSystem-akka.actor.default-dispatcher-86] DEBUG com.intuit.karate - response time in milliseconds: 552
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 926903f0bcf03d573ca69426baaf15dd
+1 < Date: Thu, 22 Aug 2024 11:42:07 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:08.099 [GatlingSystem-akka.actor.default-dispatcher-53] DEBUG com.intuit.karate - response time in milliseconds: 741
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 399ba14020cf902bac394656f3b91c2e
+1 < Date: Thu, 22 Aug 2024 11:42:07 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:08.134 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - response time in milliseconds: 564
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 7cf3f1d4ebe13e9a9c2e585ef18e4b03
+1 < Date: Thu, 22 Aug 2024 11:42:07 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:08.207 [GatlingSystem-akka.actor.default-dispatcher-89] DEBUG com.intuit.karate - response time in milliseconds: 553
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: e8799e86730a27060c99b21406d8e450
+1 < Date: Thu, 22 Aug 2024 11:42:07 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:08.312 [GatlingSystem-akka.actor.default-dispatcher-23] DEBUG com.intuit.karate - response time in milliseconds: 545
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 37aba9c1502b18b4dcafd93933b21f95
+1 < Date: Thu, 22 Aug 2024 11:42:07 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:08.412 [GatlingSystem-akka.actor.default-dispatcher-33] DEBUG com.intuit.karate - response time in milliseconds: 545
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 0c0e8f735c6bf8de16cecba84e74e919
+1 < Date: Thu, 22 Aug 2024 11:42:07 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:12.956 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:12.959 [GatlingSystem-akka.actor.default-dispatcher-62] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:12.961 [GatlingSystem-akka.actor.default-dispatcher-62] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:13.568 [GatlingSystem-akka.actor.default-dispatcher-62] DEBUG com.intuit.karate - response time in milliseconds: 605
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: d33d3dd0e62403ad7bbae56262b76719;o=1
+1 < Date: Thu, 22 Aug 2024 11:42:12 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:13.958 [gatling-1-9] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:13.962 [GatlingSystem-akka.actor.default-dispatcher-28] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:13.964 [GatlingSystem-akka.actor.default-dispatcher-28] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:14.526 [GatlingSystem-akka.actor.default-dispatcher-28] DEBUG com.intuit.karate - response time in milliseconds: 560
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 45dcac1df356e6949d1b32544a8fc0aa
+1 < Date: Thu, 22 Aug 2024 11:42:13 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:14.956 [gatling-1-10] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:14.966 [GatlingSystem-akka.actor.default-dispatcher-30] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:14.968 [GatlingSystem-akka.actor.default-dispatcher-30] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:15.538 [GatlingSystem-akka.actor.default-dispatcher-30] DEBUG com.intuit.karate - response time in milliseconds: 568
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 643404e3aeb458ef4d18767c0f5e4a9a
+1 < Date: Thu, 22 Aug 2024 11:42:14 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:15.953 [gatling-1-11] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:15.954 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@700260e8 has finished injecting
+13:42:15.954 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+13:42:15.959 [GatlingSystem-akka.actor.default-dispatcher-87] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:15.962 [GatlingSystem-akka.actor.default-dispatcher-87] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:16.539 [GatlingSystem-akka.actor.default-dispatcher-87] DEBUG com.intuit.karate - response time in milliseconds: 574
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: 66adc66af980de5ef76c1f31daae8a96
+1 < Date: Thu, 22 Aug 2024 11:42:15 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:16.949 [gatling-1-12] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:16.954 [GatlingSystem-akka.actor.default-dispatcher-19] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:16.956 [GatlingSystem-akka.actor.default-dispatcher-19] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > karate-name: Get list of tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:17.544 [GatlingSystem-akka.actor.default-dispatcher-19] DEBUG com.intuit.karate - response time in milliseconds: 587
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"77-n58tqAEwMeLeUXLvbBUoXgTiwWg"
+1 < X-Cloud-Trace-Context: b0452f8e6339aa74b1625e1b5452f559
+1 < Date: Thu, 22 Aug 2024 11:42:16 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 119
+{"tags":["Test","GitHub","Coding","Bondar Academy","Git","Zoom","YouTube","qa career","Collaboration","Value-Focused"]}
+
+13:42:17.548 [GatlingSystem-akka.actor.default-dispatcher-29] INFO  i.g.core.controller.inject.Injector - All users of scenario get list of tags are stopped
+13:42:17.549 [GatlingSystem-akka.actor.default-dispatcher-29] INFO  i.g.core.controller.inject.Injector - Stopping
+13:42:17.551 [GatlingSystem-akka.actor.default-dispatcher-74] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+13:42:17.592 [GatlingSystem-akka.actor.default-dispatcher-86] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+13:42:17.636 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(D:\Projects\karategithub\karate-template\target\gatling\perftest-20240822114123825\simulation.log) from perftest-20240822114123825
+13:42:17.662 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+13:42:17.673 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 469 lines
+13:42:17.687 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+13:42:17.733 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 469 lines
